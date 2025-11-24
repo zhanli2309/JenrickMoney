@@ -1,0 +1,35 @@
+/*THIS IS CSS*/
+/* Custom CSS variables for Dark Mode */
+:root {
+	--color-primary: #1F2937; /* Dark Gray background */
+	--color-secondary: #374151; /* Slightly lighter gray for cards */
+	--color-text: #F3F4F6; /* Light gray text */
+	--color-accent: #60A5FA; /* Blue accent */
+	--color-success: #10B981; /* Green for net pay */
+}
+body {
+	font-family: 'Inter', sans-serif;
+	background-color: var(--color-primary);
+	color: var(--color-text);
+	transition: background-color 0.3s, color 0.3s;
+}
+.card {
+	background-color: var(--color-secondary);
+	border-radius: 0.75rem; /* rounded-xl */
+	box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.2), 0 4px 6px -2px rgba(0, 0, 0, 0.1);
+}
+.header-section {
+	background-color: #4B5563; /* Gray-600 */
+}
+.summary-box {
+	background-color: #374151;
+	border: 2px solid #60A5FA;
+}
+.collapse-toggle {
+	cursor: pointer;
+	user-select: none;
+	transition: background-color 0.2s;
+}
+.collapse-toggle:hover {
+	background-color: #6B7280; /* Gray-500 on hover */
+}
