@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Monthly Salary Slip - October 2025</title>
+    <!-- Load Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="JENRICKMONEY.css">
+	
+</head>
+
+<body class="p-4 sm:p-8">
+
+    <div class="max-w-4xl mx-auto py-8">
+        <!-- Header -->
+        <header class="text-center mb-10">
+            <h1 class="text-3xl sm:text-4xl font-extrabold text-white mb-2">Chuan Yi Technology Co., Ltd.</h1>
+            <h2 class="text-xl sm:text-2xl font-semibold text-gray-300 border-b border-gray-600 pb-2">>>> Monthly Pay Slip <<<</h2>
+        </header>
+
+        <!-- Main Info Card -->
+        <div class="card p-6 mb-8">
+            <div class="grid grid-cols-2 md:grid-cols-4 gap-4 text-sm sm:text-base">
+                <div class="col-span-2 md:col-span-1">
+                    <span class="font-bold text-gray-400">Salary Month:</span><br>
+                    <span class="text-lg text-white">October 2025</span>
+                </div>
+                <div>
+                    <span class="font-bold text-gray-400">Department:</span><br>
+                    <span class="text-lg text-white">P833 Sec 1, Grp 3</span>
+                </div>
+                <div>
+                    <span class="font-bold text-gray-400">Employee ID/Name:</span><br>
+                    <span class="text-lg text-white">S06502 / An Zhan Li</span>
+                </div>
+                <div>
+                    <span class="font-bold text-gray-400">Seniority:</span><br>
+                    <span class="text-lg text-white">7 Months</span>
+                </div>
+                <div class="col-span-2 md:col-span-1">
+                    <span class="font-bold text-gray-400">Payroll Type:</span><br>
+                    <span class="text-lg text-white">Hourly Paid Staff</span>
+                </div>
+                <div class="col-span-2 md:col-span-1">
+                    <span class="font-bold text-gray-400">Approved Monthly Salary:</span><br>
+                    <span class="text-lg text-white">N/A</span>
+                </div>
+            </div>
+        </div>
+
+        <!-- Summary Boxes (Total Earnings, Deductions, Net Pay) -->
+        <div class="grid grid-cols-1 sm:grid-cols-3 gap-4 mb-8 text-center">
+            <div class="summary-box p-4 rounded-xl">
+                <p class="text-sm font-medium text-gray-300 uppercase">Total Earnings (NTD)</p>
+                <p class="text-3xl font-bold text-white mt-1">38,133</p>
+            </div>
+            <div class="summary-box p-4 rounded-xl border-red-500">
+                <p class="text-sm font-medium text-gray-300 uppercase">Total Deductions (NTD)</p>
+                <p class="text-3xl font-bold text-red-400 mt-1">3,136</p>
+            </div>
+            <div class="summary-box p-4 rounded-xl border-green-500">
+                <p class="text-sm font-medium text-gray-300 uppercase">Net Pay (NTD)</p>
+                <p class="text-3xl font-bold text-color-success mt-1">34,997</p>
+            </div>
+        </div>
+
+        <!-- Detailed Sections (Collapsible) -->
+        <div class="space-y-4">
+            <!-- Earnings Details -->
+            <div class="card overflow-hidden">
+                <div id="earnings-toggle" class="collapse-toggle header-section p-4 text-lg font-semibold flex justify-between items-center rounded-t-xl">
+                    <span>Earnings Details (應領項目)</span>
+                    <svg class="w-5 h-5 transition-transform duration-300" id="earnings-icon" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path></svg>
+                </div>
+                <div id="earnings-content" class="p-4 transition-all duration-300 ease-in-out">
+                    <div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
+                        <!-- Column 1 -->
+                        <div class="space-y-2">
+                            <div class="flex justify-between border-b border-gray-700 pb-1"><span>Base Salary (本俸)</span><span class="font-mono">0</span></div>
+                            <div class="flex justify-between border-b border-gray-700 pb-1"><span>Environment Allowance (環境加給)</span><span class="font-mono">0</span></div>
+                            <div class="flex justify-between border-b border-gray-700 pb-1"><span>Base Salary Addition (本俸加給)</span><span class="font-mono">0</span></div>
+                            <div class="flex justify-between border-b border-gray-700 pb-1"><span>Skill Allowance (能力加給)</span><span class="font-mono">0</span></div>
+                            <div class="flex justify-between border-b border-gray-700 pb-1"><span>Duty Allowance (職務加給)</span><span class="font-mono">0</span></div>
+                            <div class="flex justify-between border-b border-gray-700 pb-1"><span>Perfect Attendance (全勤獎金)</span><span class="font-mono">0</span></div>
+                            <div class="flex justify-between border-b border-gray-700 pb-1"><span>Language Allowance (語言加給)</span><span class="font-mono">0</span></div>
+                            <div class="flex justify-between border-b border-gray-700 pb-1"><span>Diligence Bonus (勤勞獎金)</span><span class="font-mono">0</span></div>
+                            <div class="flex justify-between border-b border-gray-700 pb-1"><span>Other Allowance Retro. (其他加給補發)</span><span class="font-mono">0</span></div>
+                        </div>
+                        <!-- Column 2 -->
+                        <div class="space-y-2">
+                            <div class="flex justify-between border-b border-gray-700 pb-1"><span>Meal Allowance (伙食津貼)</span><span class="font-mono">0</span></div>
+                            <div class="flex justify-between border-b border-gray-700 pb-1"><span class="font-semibold text-color-accent">Overtime Pay (加班費)</span><span class="font-mono font-semibold text-color-accent">8,493</span></div>
+                            <div class="flex justify-between border-b border-gray-700 pb-1"><span>Industry-Academia Subsidy (建教津貼)</span><span class="font-mono">0</span></div>
+                            <div class="flex justify-between border-b border-gray-700 pb-1"><span>Other Salary (其他薪資)</span><span class="font-mono">0</span></div>
+                            <div class="flex justify-between border-b border-gray-700 pb-1"><span class="font-semibold text-color-success">Internship Subsidy (實習津貼)</span><span class="font-mono font-semibold text-color-success">25,080</span></div>
+                            <div class="flex justify-between border-b border-gray-700 pb-1"><span class="font-semibold text-color-success">Part-time Wages (工讀薪資)</span><span class="font-mono font-semibold text-color-success">4,560</span></div>
+                        </div>
+                    </div>
+                    <div class="mt-4 pt-4 border-t border-gray-600 grid grid-cols-2 gap-4">
+                        <div class="flex justify-between font-bold text-gray-300"><span>Tax-Exempt Subtotal (免稅小計)</span><span class="text-white">8,493</span></div>
+                        <div class="flex justify-between font-bold text-gray-300"><span>Taxable Subtotal (應稅小計)</span><span class="text-white">29,640</span></div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Deductions Details -->
+            <div class="card overflow-hidden">
+                <div id="deductions-toggle" class="collapse-toggle header-section p-4 text-lg font-semibold flex justify-between items-center">
+                    <span>Deductions Details (代扣項目)</span>
+                    <svg class="w-5 h-5 transition-transform duration-300" id="deductions-icon" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path></svg>
+                </div>
+                <div id="deductions-content" class="p-4 transition-all duration-300 ease-in-out">
+                    <div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
+                        <div class="space-y-2">
+                            <div class="flex justify-between border-b border-gray-700 pb-1"><span>Loan/Advance (借支)</span><span class="font-mono">0</span></div>
+                            <div class="flex justify-between border-b border-gray-700 pb-1"><span class="text-red-400">Labor Insurance Fee (勞保費)</span><span class="font-mono text-red-400">697</span></div>
+                            <div class="flex justify-between border-b border-gray-700 pb-1"><span class="text-red-400">Health Insurance Fee (健保費)</span><span class="font-mono text-red-400">470</span></div>
+                            <div class="flex justify-between border-b border-gray-700 pb-1"><span class="text-red-400">Welfare Fund (福利金)</span><span class="font-mono text-red-400">191</span></div>
+                            <div class="flex justify-between border-b border-gray-700 pb-1"><span>Meal Expense (伙食費)</span><span class="font-mono">0</span></div>
+                        </div>
+                        <div class="space-y-2">
+                            <div class="flex justify-between border-b border-gray-700 pb-1"><span class="text-red-400">Income Tax (所得稅)</span><span class="font-mono text-red-400">1,778</span></div>
+                            <div class="flex justify-between border-b border-gray-700 pb-1"><span>Voluntary Pension (勞退自提)</span><span class="font-mono">0</span></div>
+                            <div class="flex justify-between border-b border-gray-700 pb-1"><span>Other Deduction (其他代扣)</span><span class="font-mono">0</span></div>
+                            <div class="flex justify-between border-b border-gray-700 pb-1"><span>Rent (租金)</span><span class="font-mono">0</span></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Leave and Attendance Summary -->
+            <div class="card overflow-hidden">
+                <div id="leave-toggle" class="collapse-toggle header-section p-4 text-lg font-semibold flex justify-between items-center">
+                    <span>Leave and Attendance Summary (假別/考勤)</span>
+                    <svg class="w-5 h-5 transition-transform duration-300" id="leave-icon" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path></svg>
+                </div>
+                <div id="leave-content" class="p-4 transition-all duration-300 ease-in-out">
+                    <p class="mb-3 font-semibold text-gray-300">Annual Leave Available: 9 hours (10/01-12/31/2025)</p>
+                    <div class="grid grid-cols-2 md:grid-cols-4 gap-4 text-sm sm:text-base">
+                        <!-- Leave Types -->
+                        <div class="col-span-1 md:col-span-2 space-y-2">
+                            <p class="font-bold text-white mb-2">Leave Hours (Monthly / Cumulative)</p>
+                            <div class="flex justify-between border-b border-gray-700 pb-1"><span>Personal Leave (事假)</span><span class="font-mono">0.00h / 0.00h</span></div>
+                            <div class="flex justify-between border-b border-gray-700 pb-1"><span>Sick Leave (病假)</span><span class="font-mono">0.00h / 0.00h</span></div>
+                            <div class="flex justify-between border-b border-gray-700 pb-1"><span>Annual Leave (特休假)</span><span class="font-mono">0.00h / 0.00h</span></div>
+                            <div class="flex justify-between border-b border-gray-700 pb-1"><span>Marriage Leave (婚假)</span><span class="font-mono">0.00h / 0.00h</span></div>
+                            <div class="flex justify-between border-b border-gray-700 pb-1"><span>Maternity Leave (產假)</span><span class="font-mono">0.00h / 0.00h</span></div>
+                            <div class="flex justify-between border-b border-gray-700 pb-1"><span>Bereavement Leave (喪假)</span><span class="font-mono">0.00h / 0.00h</span></div>
+                        </div>
+                        <div class="col-span-1 md:col-span-2 space-y-2">
+                            <p class="font-bold text-white mb-2">Attendance / Awards (Monthly / Cumulative)</p>
+                            <div class="flex justify-between border-b border-gray-700 pb-1"><span class="text-red-500 font-semibold">Absenteeism (曠職)</span><span class="font-mono text-red-500 font-semibold">4.00h / 4.25h</span></div>
+                            <div class="flex justify-between border-b border-gray-700 pb-1"><span>Late Arrival (遲到)</span><span class="font-mono">0 / 0</span></div>
+                            <div class="flex justify-between border-b border-gray-700 pb-1"><span>Early Departure (早退)</span><span class="font-mono">0 / 0</span></div>
+                            <div class="flex justify-between border-b border-gray-700 pb-1"><span>Forgot to Punch Card (忘記刷卡)</span><span class="font-mono">0 / 0</span></div>
+                            <div class="flex justify-between border-b border-gray-700 pb-1"><span>Major Merit (大功)</span><span class="font-mono">0 / 0</span></div>
+                            <div class="flex justify-between border-b border-gray-700 pb-1"><span>Commendation (嘉獎)</span><span class="font-mono">0 / 0</span></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+    <script src="JENRICKMONEY.js" defer></script>
+</body>
+</html>
